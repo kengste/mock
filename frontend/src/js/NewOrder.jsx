@@ -109,7 +109,7 @@ export const NewOrder = () => {
           </div>
           <input
             type="submit"
-            value={`Add pizza (${(state.price || {}).toFixed(2)})`}
+            value={`Add pizza (${(state.price || 0).toFixed(2)})`}
           />
         </form>
       </div>
@@ -138,7 +138,7 @@ export const NewOrder = () => {
               <div className="table-cell">
                 {(mapSpecsIdToDetails[item.topping] || {}).name}
               </div>
-              <div className="table-cell">{(item.price || {}).toFixed(2)}</div>
+              <div className="table-cell">{(item.price || 0).toFixed(2)}</div>
             </div>
           ))}
         </div>
