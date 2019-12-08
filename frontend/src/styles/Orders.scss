@@ -1,0 +1,29 @@
+.orders {
+  padding-top: 2rem;
+  a {
+    width: 100px;
+    background-color: #4caf50;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      min-width: 256px;
+      padding: 24px;
+      // background: red;
+      border: solid 2px;
+      border-radius: 8px;
+      margin-right: 12px;
+      .list-item {
+        display: block;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

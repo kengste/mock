@@ -1,0 +1,49 @@
+.table.pizza-menu {
+  display: table;
+  min-width: 60vw;
+  // padding-top: 2rem;
+  .table-cell {
+    display: table-cell;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+  .table-header {
+    display: table-header-group;
+    background-color: gray;
+    font-weight: bold;
+  }
+  .table-body {
+    display: table-row-group;
+    .table-row {
+      display: table-row;
+    }
+  }
+}
+.new-order {
+  .form-field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input[type="number"],
+  select {
+    width: 180px;
+    height: 29px;
+    padding: 7px 10px;
+    margin: 4px 4px 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100px;
+    background-color: #4caf50;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:disabled {
+    opacity: 0.1;
+  }
+}

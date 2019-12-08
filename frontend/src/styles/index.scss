@@ -1,0 +1,38 @@
+@import "./PizzaManagement.scss";
+@import "./PizzaMenu.scss";
+@import "./Orders.scss";
+@import "./Statistics.scss";
+@import "./Home.scss";
+@import "./NewOrder.scss";
+@import "./Login.scss";
+
+body {
+  font-size: 16px;
+  padding: 0 5rem;
+  input[type="number"],
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 180px;
+    height: 29px;
+    padding: 7px 10px;
+    margin: 4px 4px 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100px;
+    background-color: #4caf50;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:disabled {
+    opacity: 0.1;
+  }
+}
